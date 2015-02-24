@@ -15,19 +15,19 @@ def is_prime(number):
         if not number % i:
             break
     else:
-        return True
+        return number > 1
     return False
 
 
-def add_dot(words=None):
-    if words is None:
-        words = ['example', 'sentence']
-    words += ['.']
-    return ' '.join(words)
+def add_dot(words_list=None):
+    if words_list is None:
+        words_list = ['example', 'sentence']
+    words_list += ['.']
+    return ' '.join(words_list)
 
 
-def count_letters(words):
-    return {word: len(word) for word in words}
+def count_letters(words_list):
+    return {word: len(word) for word in words_list}
 
 
 def multiply_by_2(number):
